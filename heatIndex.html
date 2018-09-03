@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Lab1 Heat Index Calculator</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <h1>Heat Index Calculator</h1>
+    <p>This application allows you to enter the current temperature in fahrenheit, the relative humidity as a percentage and the heat index</p>
+    <form onsubmit="return false;">
+      <label>
+        Temp (Fahrenheit&deg;)
+        <input type="number" id="degreesFahrenheit" value="0"/>
+      </label>
+      <label>
+        Humidity (%)
+        <input type="number" id="humidityPercentage" value="0"/>
+      </label>
+      <button onclick="calculateHeatIndex();">Calculate</button>
+      <output id="output"></output>
+    </form>
+    
